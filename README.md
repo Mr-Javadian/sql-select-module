@@ -23,7 +23,6 @@ A lightweight and extensible Python module for performing safe and structured `S
 ### 📁 Project Structure
 ```
 sql-select-module/
-├── .env
 ├── main.py
 └── README.md
 ```
@@ -35,6 +34,23 @@ Clone the repository:
 ```bash
 git clone https://github.com/Mr-Javadian/sql-select-module.git
 cd Mr-Javadian/sql-select-module
+```
+
+### env example:
+```
+# database 1: chat_app
+DB_CHAT_APP_HOST=127.0.0.1
+DB_CHAT_APP_PORT=3306
+DB_CHAT_APP_USER=root
+DB_CHAT_APP_PASSWORD=root
+DB_CHAT_APP_NAME=chat_app
+
+# database 2: example_db
+DB_EXAMPLE_DB_HOST=127.0.0.1
+DB_EXAMPLE_DB_PORT=3306
+DB_EXAMPLE_DB_USER=root
+DB_EXAMPLE_DB_PASSWORD=root
+DB_EXAMPLE_DB_NAME=example_db
 ```
 
 🧠 Usage
