@@ -44,50 +44,21 @@ Copy
 Edit
 from main import sql_query_select
 
-# Fetch all records
-result = sql_query_select("example_db", "users", fetch="all")
-print(result)
+#Args:
+        db_key (str): The database identifier key corresponding to environment config.
+        table_name (str): Name of the table to query.
+        fetch (str): Specifies which rows to fetch:  
+                     'all' (default) fetches all rows,  
+                     'first' fetches the first row ordered by 'order_column' ascending,  
+                     'last' fetches the last row ordered by 'order_column' descending.
+        column (str): Columns to select, e.g. 'id, name' or '*' for all columns.
+        order_column (str): Column used for ordering when fetch is 'first' or 'last'. Default is 'id'.
 
-# Fetch first user by ID
-first_user = sql_query_select("chat_app", "users", fetch="first", order_column="id")
-print(first_user)
+    #Returns:
+        - If successful and a single column is selected, returns a list of values for that column.
+        - If multiple columns or '*' is selected, returns a list of dictionaries (row mappings).
+        - On error, returns a dictionary with an "error" key and descriptive message.
 
-# Fetch last user's email
-last_email = sql_query_select("chat_app", "users", fetch="last", column="email", order_column="id")
-print(last_email)
-🔎 Function Documentation
-sql_query_select
-python
-Copy
-Edit
-sql_query_select(
-    db_key: str,
-    table_name: str,
-    fetch: str = "all",
-    column: str = "*",
-    order_column: str = "id"
-)
-Parameters:
-Name	Type	Description
-db_key	str	Identifier matching .env prefix (e.g. chat_app)
-table_name	str	Table name to query
-fetch	str	One of 'all', 'first', 'last'
-column	str	Column(s) to select (e.g. "name,email" or "*")
-order_column	str	Column to order by when using first or last
-
-Returns:
-List of dictionaries (if column="*" or multiple columns)
-
-List of values (if only one column is selected)
-
-Dictionary with "error" key in case of failure
-
-💡 Tips
-Make sure your .env is never uploaded publicly (add to .gitignore)
-
-For better performance, limit your queries when possible
-
-You can extend this module to include INSERT, UPDATE, DELETE, and parameterized queries
 
 📄 License
 MIT License
