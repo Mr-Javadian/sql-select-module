@@ -29,14 +29,14 @@ sql-select-module/
 
 ---
 
-Clone the repository:
+### Clone the repository:
 
 ```bash
 git clone https://github.com/Mr-Javadian/sql-select-module.git
 cd Mr-Javadian/sql-select-module
 ```
 
-### env example:
+### .env file example:
 ```
 # database 1: chat_app
 DB_CHAT_APP_HOST=127.0.0.1
