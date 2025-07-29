@@ -29,13 +29,6 @@ sql-select-module/
 
 ---
 
-### Clone the repository:
-
-```bash
-git clone https://github.com/Mr-Javadian/sql-select-module.git
-cd Mr-Javadian/sql-select-module
-```
-
 ### .env file example:
 ```
 # database 1: chat_app
