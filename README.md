@@ -30,7 +30,7 @@ your-project/
 
 ---
 
-#Clone the repository:
+##Clone the repository:
 
 ```bash
 git clone https://github.com/Mr-Javadian/sql-select-module.git
@@ -44,17 +44,17 @@ Copy
 Edit
 from main import sql_query_select
 
-#Args:
-        db_key (str): The database identifier key corresponding to environment config.
-        table_name (str): Name of the table to query.
-        fetch (str): Specifies which rows to fetch:  
-                     'all' (default) fetches all rows,  
-                     'first' fetches the first row ordered by 'order_column' ascending,  
-                     'last' fetches the last row ordered by 'order_column' descending.
-        column (str): Columns to select, e.g. 'id, name' or '*' for all columns.
-        order_column (str): Column used for ordering when fetch is 'first' or 'last'. Default is 'id'.
+        ##Args:
+                db_key (str): The database identifier key corresponding to environment config.
+                table_name (str): Name of the table to query.
+                fetch (str): Specifies which rows to fetch:  
+                             'all' (default) fetches all rows,  
+                             'first' fetches the first row ordered by 'order_column' ascending,  
+                             'last' fetches the last row ordered by 'order_column' descending.
+                column (str): Columns to select, e.g. 'id, name' or '*' for all columns.
+                order_column (str): Column used for ordering when fetch is 'first' or 'last'. Default is 'id'.
 
-    #Returns:
+    ##Returns:
         - If successful and a single column is selected, returns a list of values for that column.
         - If multiple columns or '*' is selected, returns a list of dictionaries (row mappings).
         - On error, returns a dictionary with an "error" key and descriptive message.
