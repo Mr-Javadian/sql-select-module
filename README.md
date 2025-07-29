@@ -30,48 +30,12 @@ your-project/
 
 ---
 
-## ⚙️ Installation
-
-1. Clone the repository:
+#Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-
-
-2.Create a virtual environment (recommended):
-
-bash
-Copy
-Edit
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-3.Install required libraries:
-
-bash
-Copy
-Edit
-pip install mysql-connector-python python-dotenv
-🔐 Environment Variables
-Create a .env file in the project root with the following format for each database you want to use:
-
-dotenv
-Copy
-Edit
-# Chat App Database
-DB_CHAT_APP_HOST=127.0.0.1
-DB_CHAT_APP_PORT=3306
-DB_CHAT_APP_USER=root
-DB_CHAT_APP_PASSWORD=your_password
-DB_CHAT_APP_NAME=chat_app
-
-# Example DB
-DB_EXAMPLE_DB_HOST=127.0.0.1
-DB_EXAMPLE_DB_PORT=3306
-DB_EXAMPLE_DB_USER=root
-DB_EXAMPLE_DB_PASSWORD=your_password
-DB_EXAMPLE_DB_NAME=example_db
-Replace chat_app and example_db with your actual database identifiers.
+git clone https://github.com/Mr-Javadian/sql-select-module.git
+cd Mr-Javadian/sql-select-module
+```
 
 🧠 Usage
 ▶️ Example Python Code
