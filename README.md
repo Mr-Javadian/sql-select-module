@@ -22,7 +22,7 @@ A lightweight and extensible Python module for performing safe and structured `S
 
 ### 📁 Project Structure
 ```
-sql-select-module/
+sql_query_select/
 ├── sql-select-module.py
 └── README.md
 ```
