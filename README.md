@@ -53,13 +53,7 @@ DB_EXAMPLE_DB_PASSWORD=root
 DB_EXAMPLE_DB_NAME=example_db
 ```
 
-🧠 Usage
-▶️ Example Python Code
-python
-Copy
-Edit
-from main import sql_query_select
-
+### 🧠 Usage
         Args:
                 db_key (str): The database identifier key corresponding to environment config.
                 table_name (str): Name of the table to query.
