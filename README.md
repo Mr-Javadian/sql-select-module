@@ -1,4 +1,4 @@
-# 🔍 SQL Query Utility with Dynamic Environment-based Configuration
+# 🔍 SQL Query Utility 
 
 A lightweight and extensible Python module for performing safe and structured `SELECT` queries on multiple MySQL databases using `.env` configuration.
 
