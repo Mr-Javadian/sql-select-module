@@ -21,12 +21,12 @@ A lightweight and extensible Python module for performing safe and structured `S
 - Environment variables defined via `.env` file
 
 ### 📁 Project Structure
-
+```
 your-project/
 ├── .env
 ├── main.py
 └── README.md
-
+```
 
 ---
 
